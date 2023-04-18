@@ -1,0 +1,87 @@
+
+/* 正文文字大小样式 */
+@fontSizeSmall: 0.75rem; // 中号
+@fontSizeMiddle: 0.8rem; // 小号
+@fontSizeBig: 0.85rem; // 大号
+
+/* 用于存储 less 变量 */
+@pwidth: 980px; // pc 网页宽度
+@mwidth: 100vw; // mobile 网页宽度
+@bgColor: #FBFBFB; // 基本背景颜色
+@baseColor: #409EFF; // 网页基调颜色
+@fontColor: #333; // 基本文字颜色
+@active-color: #409EFF; // 激活文字颜色
+
+/* 基本样式 */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-size:20px !important;
+}
+
+/* 不可见 */
+.no-see {
+  display: none;
+}
+/* 系统a便签基本样式:没有下划线，访问前后颜色不变 */
+.my-link {
+  text-decoration: none;
+
+  &:hover {
+    color: #36a2f5;
+  }
+
+  &:visited {
+    color: #fff;
+  }
+}
+/* 超出1行显示省略号 */
+.over-pointr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 不能选中 */
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Ul清边距 */
+.my-ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* 左浮动 */
+.float-left {
+  float: left;
+}
+
+/* 右浮动 */
+.float-right {
+  float: right;
+}
+/* 清除浮动 */
+.clear-float {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+/* pre 换行 */
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+* {
+  box-sizing: border-box;
+}
